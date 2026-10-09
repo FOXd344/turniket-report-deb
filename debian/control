@@ -1,0 +1,15 @@
+Source: turniket-report
+Section: utils
+Priority: optional
+Maintainer: FOXd344 <you@example.com>
+Build-Depends: debhelper (>= 13), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Homepage: https://github.com/FOXd344/turniket-report-deb
+
+Package: turniket-report
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-pandas, python3-openpyxl, python3-tk
+Description: Turniket Report – CSV to XLSX converter
+ Aplikácia na spracovanie surového CSV exportu z Integriti a vytvorenie
+ formátovaného Excel reportu o príchodoch a odchodoch na turniketoch.
